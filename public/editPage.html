@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div>
+
+        <nav>
+            <ol>
+                <li class="page-link"><a href="./homePage.html">Home</a></li>
+                <li class="page-link"><a href="./editPage.html">Appointment Search</a></li>
+                <li class="page-link"><a href="./employeePage.html">Employee Page</a></li>
+            </ol>
+</nav>
+    </div>
+    
+    <div class="edit-appointment-box">
+        <label for="edit-appointment-id">Enter Appointment ID:</label>
+        <input type="text" id="edit-appointment-id" name="edit-appointment-id">
+        <button id="edit-appointment-btn">Edit Appointment</button>
+    </div>
+
+    <div class="edit-form" style="display: none;">
+        <label for="edit-text-input1">Name:</label>
+        <input type="text" id="edit-text-input1" name="edit-text-input1"><br><br>
+    
+        <label for="edit-text-input2">Breed:</label>
+        <input type="text" id="edit-text-input2" name="edit-text-input2"><br><br>
+    
+        <label for="edit-time-input">Time:</label>
+        <input type="time" id="edit-time-input" name="edit-time-input"><br><br>
+    
+        <label for="edit-dropdown">Service Package:</label>
+        <select id="edit-dropdown" name="edit-dropdown">
+            <option value="Full Service">Full Service</option>
+            <option value="Bath">Bath</option>
+            <option value="Nails">Nails</option>
+        </select><br><br>
+    
+        <label for="edit-returning-customer">Returning Customer?</label>
+        <input type="checkbox" id="edit-returning-customer" name="edit-returning-customer"><br><br>
+        <button id="edit-save-btn">Save Changes</button>
+    </div>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="editPage.js"></script>
+</body>
+</html>
